@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Owner Dashboard | KitchenShare</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dashboard-body">
+
+  <div class="dashboard-layout">
+    <aside class="dashboard-sidebar">
+      <div class="sidebar-logo">
+        <a href="index.html" class="logo">
+          <i class="fas fa-utensils"></i>
+          KitchenShare
+        </a>
+      </div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li class="active"><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+          <li><a href="#"><i class="fas fa-calendar-alt"></i> Bookings</a></li>
+          <li><a href="#"><i class="fas fa-store"></i> Kitchen Profile</a></li>
+          <li><a href="#"><i class="fas fa-dollar-sign"></i> Earnings</a></li>
+          <li><a href="#"><i class="fas fa-clock"></i> Availability</a></li>
+          <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+          <li><a href="#"><i class="fas fa-life-ring"></i> Support</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <div class="dashboard-main">
+      <header class="dashboard-top-bar">
+        <div class="top-bar-title">
+          <h1>Kitchen Owner Dashboard</h1>
+        </div>
+        <div class="top-bar-user">
+          <button class="notifications-btn">
+            <i class="fas fa-bell"></i>
+            <span class="notification-count">2</span>
+          </button>
+          <div class="user-profile">
+            <img src="https://via.placeholder.com/40/FFA07A/000000?Text=S" alt="User Avatar" class="user-avatar">
+            <span class="user-name">Sarah's Kitchen</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+      </header>
+
+      <main class="dashboard-content">
+        <section class="stats-cards-grid">
+          <div class="stat-card">
+            <div class="stat-card-info">
+              <p>Bookings This Month</p>
+              <h2>28</h2>
+              <span class="stat-change positive"><i class="fas fa-arrow-up"></i> 12% from last month</span>
+            </div>
+            <div class="stat-card-icon bookings">
+              <i class="fas fa-calendar-check"></i>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card-info">
+              <p>Revenue This Month</p>
+              <h2>$3,250</h2>
+              <span class="stat-change positive"><i class="fas fa-arrow-up"></i> 8% from last month</span>
+            </div>
+            <div class="stat-card-icon revenue">
+              <i class="fas fa-hand-holding-usd"></i>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card-info">
+              <p>Kitchen Utilization</p>
+              <h2>68%</h2>
+              <span class="stat-change positive"><i class="fas fa-arrow-up"></i> 5% from last month</span>
+            </div>
+            <div class="stat-card-icon utilization">
+              <i class="fas fa-chart-pie"></i>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card-info">
+              <p>New Requests</p>
+              <h2>5</h2>
+              <span class="stat-change alert"><i class="fas fa-exclamation-circle"></i> Needs your response</span>
+            </div>
+            <div class="stat-card-icon requests">
+              <i class="fas fa-bell"></i>
+            </div>
+          </div>
+        </section>
+
+        <div class="dashboard-columns">
+          <section class="dashboard-column-main">
+            <div class="content-card upcoming-bookings">
+              <h3>Upcoming Bookings</h3>
+              <!-- Placeholder for upcoming bookings content -->
+              <p>Details about upcoming bookings will go here. Could be a list or a mini calendar.</p>
+              <img src="https://via.placeholder.com/600x150/EFEFEF/999999?text=Upcoming+Bookings+Placeholder" alt="Upcoming Bookings" style="width:100%; border-radius: 5px; margin-top:10px;">
+            </div>
+
+            <div class="content-card recent-bookings">
+              <div class="card-header">
+                <h3>Recent Bookings</h3>
+                <a href="#" class="view-all-link">View All</a>
+              </div>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Chef</th>
+                    <th>Date & Time</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><img src="https://via.placeholder.com/30/90EE90/000000?Text=JW" alt="JW" class="chef-avatar"> John Wilson</td>
+                    <td>July 5, 2023 <br> <small>9:00 AM - 3:00 PM</small></td>
+                    <td>$185</td>
+                    <td><span class="status-badge upcoming">Upcoming</span></td>
+                    <td><button class="action-btn"><i class="fas fa-ellipsis-h"></i></button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="https://via.placeholder.com/30/ADD8E6/000000?Text=MG" alt="MG" class="chef-avatar"> Maria Garcia</td>
+                    <td>July 2, 2023 <br> <small>2:00 PM - 8:00 PM</small></td>
+                    <td>$210</td>
+                    <td><span class="status-badge completed">Completed</span></td>
+                    <td><button class="action-btn"><i class="fas fa-ellipsis-h"></i></button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="https://via.placeholder.com/30/FFB6C1/000000?Text=DK" alt="DK" class="chef-avatar"> David Kim</td>
+                    <td>June 28, 2023 <br> <small>10:00 AM - 5:00 PM</small></td>
+                    <td>$245</td>
+                    <td><span class="status-badge cancelled">Cancelled</span></td>
+                    <td><button class="action-btn"><i class="fas fa-ellipsis-h"></i></button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="https://via.placeholder.com/30/E6E6FA/000000?Text=LJ" alt="LJ" class="chef-avatar"> Lisa Johnson</td>
+                    <td>June 25, 2023 <br> <small>9:00 AM - 1:00 PM</small></td>
+                    <td>$120</td>
+                    <td><span class="status-badge completed">Completed</span></td>
+                    <td><button class="action-btn"><i class="fas fa-ellipsis-h"></i></button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <aside class="dashboard-column-side">
+            <div class="content-card pending-requests">
+              <h3>Pending Requests</h3>
+              <div class="request-item">
+                <h4>Chef Alex Rodriguez</h4>
+                <p class="request-details">July 15, 2023 • 9:00 AM - 3:00 PM</p>
+                <p class="request-meta">Mexican Cuisine Pop-up • 6 people</p>
+                <div class="request-actions">
+                  <button class="btn btn-small btn-success">Approve</button>
+                  <button class="btn btn-small btn-danger-outline">Decline</button>
+                  <span class="status-badge pending-tag">Pending</span>
+                </div>
+              </div>
+              <div class="request-item">
+                <h4>Chef Emily Chang</h4>
+                <p class="request-details">July 18, 2023 • 2:00 PM - 8:00 PM</p>
+                <p class="request-meta">Asian Fusion Demo • 4 people</p>
+                <div class="request-actions">
+                  <button class="btn btn-small btn-success">Approve</button>
+                  <button class="btn btn-small btn-danger-outline">Decline</button>
+                  <span class="status-badge pending-tag">Pending</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-card monthly-earnings">
+              <div class="card-header">
+                <h3>Monthly Earnings</h3>
+                <select class="earnings-period-select">
+                  <option>Last 30 days</option>
+                  <option>Last 60 days</option>
+                  <option>Last 90 days</option>
+                </select>
+              </div>
+              <div class="earnings-item">
+                <span>Total Earnings</span>
+                <span class="amount">$3,250</span>
+              </div>
+              <div class="earnings-item">
+                <span>Platform Fee (15%)</span>
+                <span class="amount negative">-$487.50</span>
+              </div>
+              <hr class="earnings-divider">
+              <div class="earnings-item total">
+                <span>Payout Amount</span>
+                <span class="amount">$2,762.50</span>
+              </div>
+              <button class="btn btn-primary full-width">View Detailed Report</button>
+            </div>
+          </aside>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
